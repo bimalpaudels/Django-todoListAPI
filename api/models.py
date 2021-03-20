@@ -6,3 +6,5 @@ class Task(models.Model):
     task_completed = models.BooleanField(default=False)
     task_date = models.DateTimeField("Date published")
 
+    def __str__(self):
+        return self.task_title
